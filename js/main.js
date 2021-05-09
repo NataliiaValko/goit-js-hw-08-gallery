@@ -73,7 +73,7 @@ const onEscKeyPress = e => {
     }
 }
 
-refs.galleryContainer.insertAdjacentHTML('beforeend', createGalleryItemsMarkUp(galleryItems));
+refs.galleryContainer.innerHTML = createGalleryItemsMarkUp(galleryItems);
 refs.galleryContainer.addEventListener('click', onOpenModal);
 refs.btnModalClose.addEventListener('click', onCloseModal);
 refs.modalOverlay.addEventListener('click', onOverlayClick);
